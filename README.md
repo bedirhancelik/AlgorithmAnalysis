@@ -1,2 +1,2 @@
 # AlgorithmAnalysis
-Assignments of Analysis of Algorithm Lecture
+Assignments of Analysis Algorithm Lecture
