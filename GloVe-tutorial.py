@@ -15,11 +15,7 @@ with open("glove.6B.50d.txt", 'r', encoding="utf-8") as f:
 def find_closest_embeddings(embedding):
     return sorted(embeddings_dict.keys(), key=lambda word: spatial.distance.euclidean(embeddings_dict[word], embedding))
 
-print(find_closest_embeddings(embeddings_dict["king"])[1:6])
 
-print(find_closest_embeddings(
-    embeddings_dict["twig"] - embeddings_dict["branch"] + embeddings_dict["hand"]
-)[:5])
 
 tsne = TSNE(n_components=2, random_state=0)
 words =  list(embeddings_dict.keys())
